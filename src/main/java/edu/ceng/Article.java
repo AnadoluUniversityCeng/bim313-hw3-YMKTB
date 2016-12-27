@@ -1,7 +1,6 @@
 package edu.ceng;
 
 import com.google.gson.annotations.SerializedName;
-
 import java.time.Month;
 import java.util.Date;
 import java.util.TimeZone;
@@ -22,4 +21,5 @@ class Article {
     Month getMonth() {
         return published.toInstant().atZone(TimeZone.getTimeZone("UTC").toZoneId()).getMonth();
     }
+
 }

@@ -14,4 +14,5 @@ class CountFunction implements ToIntFunction<String> {
     public int applyAsInt(String value) {
         return pattern.split(value).length;
     }
+
 }

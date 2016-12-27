@@ -12,8 +12,7 @@ import java.util.IntSummaryStatistics;
  */
 class Helper {
 
-    private Helper() {
-    }
+    private Helper() { }
 
     static void printDistinctMonths(String file) throws IOException {
         Files.lines(Paths.get(file), StandardCharsets.US_ASCII)
@@ -38,4 +37,5 @@ class Helper {
         System.out.println(String.format("averageLength:%.5f", summaryStatistics.getAverage()));
 
     }
+
 }
